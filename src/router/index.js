@@ -5,6 +5,7 @@ Vue.use(Router)
 const home =resolve => require(['@/view/home'],resolve)
 const bounce =resolve => require(['@/view/bounce'],resolve)
 const seekers =resolve => require(['@/view/seekers'],resolve)
+const sudoku =resolve => require(['@/view/sudoku'],resolve)
 export default new Router({
   routes: [
     {
@@ -21,6 +22,11 @@ export default new Router({
       path:'/seekers',
       name:'seekers',
       component:seekers
-    }
+    },
+    {
+      path:'/sudoku',
+      name:'sudoku',
+      component:sudoku
+    },
   ]
 })
